@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style_register.css'>
+
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="http://localhost:3000">Home</a>
+        <a href='http://localhost:3000/login'>Login</a>
+        <a href='http://localhost:3000/register'>Register</a>
+        <a href='http://localhost:3000/passwordGenerator'>Password Generator</a>
+        <a href='http://localhost:3000/logout'>Logout</a>
+    </div>
+
+
+    <form action='http://localhost:3000/register' method='POST' style="max-width:500px;margin:auto">
+      <h2>Register</h2>
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Username" name="username">
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="text" placeholder="Email" name="email">
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Password" name="password">
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+
+  <div id='message'></div>
+
+</body>
+</html>
